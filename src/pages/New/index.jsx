@@ -34,6 +34,12 @@ export function New() {
         setNewLink("");
     }
 
+    function handleAddTag(e) {
+        e.preventDefault();
+        setLinks(prevState => [...prevState, newTag]);
+        setNewTag("");
+    }
+
     function handleRemoveLink(deleted) {
         setLinks(prevState => prevState.filter(link => link !== deleted));
     }
