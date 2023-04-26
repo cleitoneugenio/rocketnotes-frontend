@@ -36,7 +36,7 @@ export function New() {
 
     function handleAddTag(e) {
         e.preventDefault();
-        setLinks(prevState => [...prevState, newTag]);
+        setTags(prevState => [...prevState, newTag]);
         setNewTag("");
     }
 
